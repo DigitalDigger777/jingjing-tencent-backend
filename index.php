@@ -17,4 +17,4 @@ $client->setCredentials($user, $pass);
 $client->connect($host, $port, 5);
 $client->publish($data['imei'], $minutes . "m", 0, 0);
 
-print($minutes . "m");
+print($data['imei'] . ':' . $minutes . "m");
